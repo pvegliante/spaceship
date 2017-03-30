@@ -6,18 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Orbit</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        position: absolute;
+      }
+
+      h4 {
+        position: static;
+        display: inline-block;
+      }
+
+      img {
+        display: none;
+      }
+    </style>
 </head>
 
 <body>
+  <canvas id="canvas"></canvas>
+  <img src="./images/space.png" id="space" alt="">
+  <img src="./images/globe.png" id="globe" alt="">
+  <img src="./images/iss.png" id="iss" alt="">
+  <audio src="./sounds/ping.wav" id="ping">
+
+  </audio>
+
     <div>
-        <h1 class="craft" id="craft"></h1>
-        <h1 class="guy" id="guy"></h1>
+        <h4class="craft" id="craft"></h4>
+        <h4class="guy" id="guy"></h4>
       </div>
+
+    <div id="people"></div>
 
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="space.js" charset="utf-8"></script>
+    <script src="globe.js" charset="utf-8"></script>
     <script src="./main.js" charset="utf-8"></script>
+    <script src="rotate.js" charset="utf-8"></script>
 </body>
 
 </html>
